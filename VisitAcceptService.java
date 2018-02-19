@@ -1,3 +1,6 @@
+test update
+
+
 package com.onlinepowers.ubase.visitaccept.service;
 
 import java.util.List;
@@ -8,25 +11,25 @@ import com.onlinepowers.ubase.visitaccept.model.domain.RRepairMaster;
 import com.onlinepowers.ubase.visitaccept.model.domain.VisitAccept;
 
 public interface VisitAcceptService {
-	// noReceipt max+1 값 받아오기
+	// noReceipt max+1 �?받아?�기
 	public String getNoReceipt(VisitAccept visitAccept);
 	
-	// visitAccept 등록
+	// visitAccept ?�록
 	public void insertVisitAccept(Map map);
 	
-	// visitAccept 파일 정보 update
+	// visitAccept ?�일 ?�보 update
 	public void updateVisitAcceptFile(Map map);
 	
-	// visitAccept 가져오기
+	// visitAccept 가?�오�?
 	public VisitAccept getVisitAccept(VisitAccept visitAccept);
 	
-	// repair pdf 등록 후 정보 update
+	// repair pdf ?�록 ???�보 update
 	public void updateProcess(Map Map);
 	
-	// 번호표 중복 체크 
+	// 번호??중복 체크 
 	public int noSeqDuplicated(VisitAccept visitAccept);
 	
-	// 담당자 지정
+	// ?�당??지??
 	public void setUser(VisitAccept visitAccept);
 	
 	//콤보 박스
@@ -34,15 +37,15 @@ public interface VisitAcceptService {
 	public List comboBoxSelectValue(Map map) ;
 	public List issueCommboBox(Map map) ;
 	
-	// RRepairMaster 가져오기
+	// RRepairMaster 가?�오�?
 	public List getRRepairMaster(RRepairMaster rRepairMaster);
 	
-	public Map getPriseList(Map map) ; // 수리 부품 리스트
-//	public Map getPriceSum(Map map) ; // 합계 가격
-//	public Map getPaySum(Map map) ; // 카드 현금 가격
+	public Map getPriseList(Map map) ; // ?�리 부??리스??
+//	public Map getPriceSum(Map map) ; // ?�계 가�?
+//	public Map getPaySum(Map map) ; // 카드 ?�금 가�?
 	
-	// 견적 확인서 디스플레이, 본체 단가 가져오기
-	public Map selectCdEee(Map map) ; // 디스플레이, 본체 단가 가져오기
+	// 견적 ?�인???�스?�레?? 본체 ?��? 가?�오�?
+	public Map selectCdEee(Map map) ; // ?�스?�레?? 본체 ?��? 가?�오�?
 
 	
 	public Map selectRenParam(Map map) ;
