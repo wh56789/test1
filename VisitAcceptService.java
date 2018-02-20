@@ -1,4 +1,4 @@
-test update222
+test update
 
 
 package com.onlinepowers.ubase.visitaccept.service;
